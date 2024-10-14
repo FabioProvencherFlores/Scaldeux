@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"c0c9833c5cfbb348","type":"text","text":"# Point de vue\nUne plage. Dans l'eau, on distingue des morceaux de vaisseaux. \n- Au loin, une colonne de fumée.\n- Un **arbre géant** est visible à l'horizon","x":-126,"y":-32,"width":386,"height":392},
+		{"id":"1687f437bd7ba505","type":"text","text":"# [[scale map river.canvas|Towards the RIVER]]","x":644,"y":104,"width":300,"height":60},
+		{"id":"a73942dedc5aeb24","type":"text","text":"# [[scale map forest 1.canvas|Towards the FOREST]]","x":640,"y":-120,"width":325,"height":68},
+		{"id":"20169cbcb61561d2","type":"text","text":"# [[scale map ship under hull.canvas|Sous le wreckage]]\n","x":640,"y":540,"width":284,"height":59}
+	],
+	"edges":[
+		{"id":"017737f9a541965d","fromNode":"c0c9833c5cfbb348","fromSide":"right","toNode":"a73942dedc5aeb24","toSide":"left"},
+		{"id":"a55ab0b2bfe4a499","fromNode":"c0c9833c5cfbb348","fromSide":"right","toNode":"20169cbcb61561d2","toSide":"left","color":"5","label":"IF water is low à cause du détour vers la mine"},
+		{"id":"8fc255b3407845da","fromNode":"c0c9833c5cfbb348","fromSide":"right","toNode":"1687f437bd7ba505","toSide":"left"}
+	]
+}

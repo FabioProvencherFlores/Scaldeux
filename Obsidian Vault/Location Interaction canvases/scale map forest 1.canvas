@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"4b25eb7ed1918dc7","type":"text","text":"# Point de vue\nUne forêt sombre. \n- Des liannes pousse sur un mur\n\t- cache des **dessins** sur les murs\n- Des papillons fluo y volent","x":-125,"y":-100,"width":405,"height":241},
+		{"id":"3078b8f609fecb47","type":"text","text":"# [[scale map cavern.canvas|Towards the CAVERN]]","x":740,"y":-30,"width":322,"height":50},
+		{"id":"6ca87d7d49560eb4","type":"text","text":"# [[scale map dark forest.canvas|Towards the DARK FOREST]]","x":716,"y":-237,"width":424,"height":57},
+		{"id":"3adad4f2f9240f73","type":"text","text":"# Interaction: \n## Collect butterflies\n\n","x":-82,"y":220,"width":320,"height":220,"color":"5"}
+	],
+	"edges":[
+		{"id":"bf33a9ab8db6e016","fromNode":"4b25eb7ed1918dc7","fromSide":"bottom","toNode":"3adad4f2f9240f73","toSide":"top","color":"5"},
+		{"id":"ecf28c595c741548","fromNode":"4b25eb7ed1918dc7","fromSide":"right","toNode":"3078b8f609fecb47","toSide":"left"},
+		{"id":"9570002d892194ce","fromNode":"4b25eb7ed1918dc7","fromSide":"right","toNode":"6ca87d7d49560eb4","toSide":"left"}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"c12dac0acefd1726","type":"text","text":"# Point de vue\n- Forest","x":-403,"y":-182,"width":250,"height":182},
+		{"id":"c5b82b6e2b086e5b","type":"text","text":"# [[scale map forest 1.canvas|Back Towards FOREST]]","x":335,"y":-358,"width":385,"height":78},
+		{"id":"267c2e8413ef41a3","type":"text","text":"# [[scale map Ancient Temple.canvas|Towards the TEMPLE]]","x":379,"y":-162,"width":341,"height":71},
+		{"id":"e5fe993999aff0dc","type":"text","text":"# Labyrinth\n","x":0,"y":240,"width":217,"height":70,"color":"1"},
+		{"id":"c95680cd420fcc2f","type":"text","text":"# [[scale map survivor village.canvas|Route to VILLAGE]]","x":480,"y":120,"width":361,"height":57},
+		{"id":"fcfcca6b9bacb058","type":"text","text":"# [[scale map Ancient Tree.canvas|Route to ANCIENT TREE]]","x":474,"y":322,"width":367,"height":78},
+		{"id":"20fa8d28ba6401cd","type":"text","text":"Un chemin de pierre conduit à travers le \"labyrinth\" vers le temple","x":40,"y":-126,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"d05be9c5ffe824fb","fromNode":"c12dac0acefd1726","fromSide":"right","toNode":"c5b82b6e2b086e5b","toSide":"left"},
+		{"id":"3437655798d88417","fromNode":"c12dac0acefd1726","fromSide":"right","toNode":"267c2e8413ef41a3","toSide":"left"},
+		{"id":"2d0c0bd3dd3b19e1","fromNode":"c12dac0acefd1726","fromSide":"right","toNode":"e5fe993999aff0dc","toSide":"left","color":"1"},
+		{"id":"4a8892188f340851","fromNode":"e5fe993999aff0dc","fromSide":"right","toNode":"c95680cd420fcc2f","toSide":"left"},
+		{"id":"18c13022ae3f79f7","fromNode":"e5fe993999aff0dc","fromSide":"right","toNode":"fcfcca6b9bacb058","toSide":"left"}
+	]
+}

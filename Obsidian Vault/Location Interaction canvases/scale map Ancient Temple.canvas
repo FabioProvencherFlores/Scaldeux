@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"0bd051d1db65010a","type":"text","text":"# Point de vue\n- Temple","x":-338,"y":-162,"width":258,"height":122},
+		{"id":"00fe695513c79fac","type":"text","text":"# Temple Door\n- Des drôles de symboles gravés dans la porte","x":229,"y":-226,"width":233,"height":125},
+		{"id":"f2aff201ccea5524","type":"text","text":"# [[scale map dark forest.canvas|Back towards DARK FOREST]]","x":229,"y":-20,"width":262,"height":71}
+	],
+	"edges":[
+		{"id":"475454a428ed40f1","fromNode":"0bd051d1db65010a","fromSide":"right","toNode":"00fe695513c79fac","toSide":"left"},
+		{"id":"166e33917a7cf61e","fromNode":"0bd051d1db65010a","fromSide":"right","toNode":"f2aff201ccea5524","toSide":"left"}
+	]
+}

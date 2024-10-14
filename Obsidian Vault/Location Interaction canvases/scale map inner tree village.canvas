@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"cc00afcfe5e53abd","x":-375,"y":-121,"width":250,"height":201,"type":"text","text":"# Point de vue\n- inner tree"},
+		{"id":"eff45e2015c6df95","x":193,"y":-162,"width":327,"height":50,"type":"text","text":"# [[scale map Ancient Tree.canvas|Back outside TREE]]"},
+		{"id":"5464e472c5ed389c","x":226,"y":86,"width":334,"height":74,"type":"text","text":"# Wooden Village\n"},
+		{"id":"ca821f290ed238d5","x":231,"y":291,"width":329,"height":69,"type":"text","text":"# Ancient Library\n"}
+	],
+	"edges":[
+		{"id":"be0c4f36694f7466","fromNode":"cc00afcfe5e53abd","fromSide":"right","toNode":"eff45e2015c6df95","toSide":"left"},
+		{"id":"2547b1a89c04de17","fromNode":"cc00afcfe5e53abd","fromSide":"right","toNode":"5464e472c5ed389c","toSide":"left"},
+		{"id":"b182646a8e99c7e1","fromNode":"cc00afcfe5e53abd","fromSide":"right","toNode":"ca821f290ed238d5","toSide":"left"}
+	]
+}

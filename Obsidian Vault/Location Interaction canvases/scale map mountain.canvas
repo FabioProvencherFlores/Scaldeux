@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"6f21e6a60622e30a","type":"text","text":"# Point de \nThe mountain","x":-245,"y":-157,"width":250,"height":237},
+		{"id":"705293693f8d45b8","type":"text","text":"# Epic Climb\n","x":300,"y":20,"width":250,"height":60,"color":"5"},
+		{"id":"83dcee275c46cc72","type":"text","text":"# [[scale map survivor village.canvas|Back Towards the VILLAGE]]\n\t","x":272,"y":-189,"width":278,"height":89},
+		{"id":"08c0c9c736a9b8bf","type":"text","text":"# [[scale map Ancient Observatory.canvas|Up to ANCIENT OBSERVATORY]]","x":696,"y":22,"width":424,"height":58}
+	],
+	"edges":[
+		{"id":"e0ba41f4371d4b5e","fromNode":"6f21e6a60622e30a","fromSide":"right","toNode":"705293693f8d45b8","toSide":"left"},
+		{"id":"0f60a066ac4677b3","fromNode":"6f21e6a60622e30a","fromSide":"right","toNode":"83dcee275c46cc72","toSide":"left"},
+		{"id":"3338aa9ca8d3e9d5","fromNode":"705293693f8d45b8","fromSide":"right","toNode":"08c0c9c736a9b8bf","toSide":"left"}
+	]
+}

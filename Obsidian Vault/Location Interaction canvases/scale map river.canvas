@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"9ec752b5827fd07f","type":"text","text":"# Point de vue\n- Rivière\n","x":-366,"y":-56,"width":246,"height":136},
+		{"id":"bd387363241c0a3e","type":"text","text":"# Watermill\n\nSur le bord de la rivière, il y a un moulin à eau. Un levier permet de l'activer.\n*A strange depression marks the top part of the sill*","x":-359,"y":169,"width":259,"height":211,"color":"5"},
+		{"id":"2b767442b463c730","type":"text","text":"# [[scale map shore rackage.canvas|Towards the SHORRES]]","x":142,"y":-75,"width":358,"height":55}
+	],
+	"edges":[
+		{"id":"532847dd8966813d","fromNode":"9ec752b5827fd07f","fromSide":"bottom","toNode":"bd387363241c0a3e","toSide":"top","color":"5"},
+		{"id":"67033431dbb5b26b","fromNode":"9ec752b5827fd07f","fromSide":"right","toNode":"2b767442b463c730","toSide":"left"}
+	]
+}

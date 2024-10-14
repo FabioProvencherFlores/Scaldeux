@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"e8549bf6b2459a18","x":220,"y":-340,"width":340,"height":388,"type":"group","label":"Inside"},
+		{"id":"dfef493d81ffbe7a","x":-334,"y":-139,"width":254,"height":119,"type":"text","text":"# Point de vue\nDeuxième wreckage"},
+		{"id":"96b81e1cbaab7818","x":270,"y":-291,"width":250,"height":60,"type":"text","text":"# Reactor room"},
+		{"id":"9767eab81bf49533","x":270,"y":-109,"width":250,"height":60,"type":"text","text":"# Biosphere"},
+		{"id":"595fa1c58c2bba08","x":238,"y":199,"width":322,"height":81,"type":"text","text":"# [[scale map survivor village.canvas|Back to VILLAGE]]"}
+	],
+	"edges":[
+		{"id":"3741e0a52a653e74","fromNode":"dfef493d81ffbe7a","fromSide":"right","toNode":"96b81e1cbaab7818","toSide":"left"},
+		{"id":"32b0e06be1a9f334","fromNode":"dfef493d81ffbe7a","fromSide":"right","toNode":"9767eab81bf49533","toSide":"left"},
+		{"id":"30581bdb8ebd6088","fromNode":"dfef493d81ffbe7a","fromSide":"right","toNode":"595fa1c58c2bba08","toSide":"left"}
+	]
+}

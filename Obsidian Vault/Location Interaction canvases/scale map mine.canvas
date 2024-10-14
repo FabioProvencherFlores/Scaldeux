@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"ac934c8f293f26e1","type":"text","text":"# Point de vue\nUne mine! Maybe Flooded?","x":-346,"y":-132,"width":266,"height":132},
+		{"id":"5a0a8e92cd19f825","type":"text","text":"# [[scale map cavern.canvas|Back up to Caverns]]","x":420,"y":-260,"width":360,"height":80},
+		{"id":"db9ac645bd0b1b4b","x":281,"y":-132,"width":279,"height":200,"type":"text","text":"# Console \nDes symboles qui peuvent être utilisés pour ouvrir l'une des serrures de la **grande porte**. Ils représentent des clés d'identification énergétique."},
+		{"id":"ac29198e2026dc7a","x":219,"y":144,"width":241,"height":156,"type":"text","text":"\nUne gemme qui allume dans le noir."}
+	],
+	"edges":[
+		{"id":"9da01a656c923054","fromNode":"ac934c8f293f26e1","fromSide":"right","toNode":"5a0a8e92cd19f825","toSide":"left"}
+	]
+}

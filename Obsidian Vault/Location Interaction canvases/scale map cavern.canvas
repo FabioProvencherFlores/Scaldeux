@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"28784df9dfb7cc43","type":"group","x":178,"y":-231,"width":402,"height":201,"label":"Untitled group"},
+		{"id":"07ca60ab69327d39","type":"text","text":"","x":510,"y":-156,"width":50,"height":50,"color":"5"},
+		{"id":"ed4ace770d6b7c30","type":"text","text":"# Point de vue\nToo dark to see anything.","x":-600,"y":-467,"width":405,"height":170},
+		{"id":"798433fe820e872f","type":"text","text":"# [[scale map forest 1.canvas|Up towards FOREST]]","x":580,"y":-800,"width":377,"height":50},
+		{"id":"eb20eef29d5ef05d","type":"text","text":"# Deeper Cavern\n## Cooling system","x":198,"y":-211,"width":312,"height":161},
+		{"id":"68f35d5d0c6cd464","type":"text","text":"# [[scale map mine.canvas|Towards the MINES]]","x":739,"y":-456,"width":352,"height":74},
+		{"id":"aaa02fa1b0254377","type":"text","text":"# [[scale map river.canvas|Towards the RIVER]]","x":697,"y":80,"width":345,"height":74},
+		{"id":"b2fd44b0844a6e88","x":739,"y":-266,"width":261,"height":160,"type":"text","text":"Un levier permet de faire couler l'eau dans l'une ou l'autre des directions. Par défault, l'eau s'écoule vers la rivière."},
+		{"id":"b07ead1c0e109a0f","x":733,"y":-106,"width":267,"height":92,"color":"5","type":"text","text":"# Interation\nChanger vers la mine"}
+	],
+	"edges":[
+		{"id":"1dcbd4848774c01e","fromNode":"ed4ace770d6b7c30","fromSide":"right","toNode":"eb20eef29d5ef05d","toSide":"left","color":"5","label":"Butterflies Ached "},
+		{"id":"bd99889ad1479c0d","fromNode":"eb20eef29d5ef05d","fromSide":"right","toNode":"07ca60ab69327d39","toSide":"left","color":"5"},
+		{"id":"ddaff94848ac1aee","fromNode":"07ca60ab69327d39","fromSide":"right","toNode":"68f35d5d0c6cd464","toSide":"left"},
+		{"id":"cc67d75f33af0a41","fromNode":"07ca60ab69327d39","fromSide":"right","toNode":"aaa02fa1b0254377","toSide":"left"},
+		{"id":"cc44f3e1033f5e23","fromNode":"ed4ace770d6b7c30","fromSide":"right","toNode":"798433fe820e872f","toSide":"left"}
+	]
+}

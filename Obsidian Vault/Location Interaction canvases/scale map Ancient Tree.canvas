@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"1e834e2d5e895b31","x":-332,"y":-147,"width":272,"height":247,"type":"text","text":"# point de vue\nAncient Tree"},
+		{"id":"3a731033d1ff69cf","x":295,"y":-212,"width":325,"height":92,"type":"text","text":"# [[scale map dark forest.canvas|Back into the FOREST]]"}
+	],
+	"edges":[
+		{"id":"30cc1b47467ae050","fromNode":"1e834e2d5e895b31","fromSide":"right","toNode":"3a731033d1ff69cf","toSide":"left"}
+	]
+}

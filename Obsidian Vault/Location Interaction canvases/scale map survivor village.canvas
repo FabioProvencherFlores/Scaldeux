@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"06f19dbb1e7526e7","type":"text","text":"# Point de vue\n- Village.","x":-314,"y":-149,"width":254,"height":109},
+		{"id":"53d823a1eedaa085","type":"text","text":"# [[scale map mountain.canvas|Towards the MOUNTAIN]]","x":320,"y":80,"width":360,"height":64},
+		{"id":"7360de0f42c5b4c9","x":293,"y":-208,"width":387,"height":59,"type":"text","text":"# [[scale map second ship wreckage.canvas|Towards SECOND WRECKAGE]]"},
+		{"id":"d5de0c334eda5466","x":-7,"y":-328,"width":267,"height":88,"color":"3","type":"text","text":"Devrait pouvoir retourner dans le labyrinthe?"}
+	],
+	"edges":[
+		{"id":"629a3248b5fd07e2","fromNode":"06f19dbb1e7526e7","fromSide":"right","toNode":"53d823a1eedaa085","toSide":"left"},
+		{"id":"ec16ebc2bfe721ef","fromNode":"06f19dbb1e7526e7","fromSide":"right","toNode":"7360de0f42c5b4c9","toSide":"left"}
+	]
+}

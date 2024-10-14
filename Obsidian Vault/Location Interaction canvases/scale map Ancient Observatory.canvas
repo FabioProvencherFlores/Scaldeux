@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"8fe5e378b280a471","x":-264,"y":-149,"width":224,"height":229,"type":"text","text":"# Point de vue\nObservatoire\n"},
+		{"id":"147285ead972b68e","x":240,"y":-34,"width":243,"height":114,"type":"text","text":"# Great Waterfalls"},
+		{"id":"be3cfde6e370c680","x":712,"y":-14,"width":328,"height":94,"type":"text","text":"# [[scale map river.canvas|Down the stream]]"}
+	],
+	"edges":[
+		{"id":"bac20a3b87eec282","fromNode":"8fe5e378b280a471","fromSide":"right","toNode":"147285ead972b68e","toSide":"left"},
+		{"id":"30f554722d326e11","fromNode":"147285ead972b68e","fromSide":"right","toNode":"be3cfde6e370c680","toSide":"left"}
+	]
+}

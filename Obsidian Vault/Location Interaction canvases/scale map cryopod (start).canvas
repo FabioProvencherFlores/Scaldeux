@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"978d33ba91e58e33","type":"text","text":"# Start here\nUn cercueuil de vitre, illuminé d'un turquoise médical.\n\nLa vitre est givrée et empêche de voir à l'extérieur.\n\nDes boutons d'un **num-pad coloré** aussi givrée.","x":-125,"y":9,"width":365,"height":271},
+		{"id":"c03f3d27925d07dc","type":"text","text":"# Up\n\nUn panneau d'*instructions* pour ouverture d'urgence du cryo-pod.","x":-71,"y":500,"width":258,"height":183},
+		{"id":"88c37a5b6ca455af","type":"text","text":"# Puzzle\n\n- Il faut reproduire la solution donnée par l'**étiquette** au plafond\n- Les entrées sont effacée après un délais un à la fois.\n- Un des boutons \"coince\" et entre 2 charactères\n- Une mauvaise combinaison cause un jet de glace","x":635,"y":99,"width":365,"height":301},
+		{"id":"b4252d3a50695944","type":"text","text":"# [[scale map cryo chamber.canvas|Ouverture du Cryopod]]","x":1280,"y":219,"width":422,"height":101}
+	],
+	"edges":[
+		{"id":"0f2b882300061c32","fromNode":"978d33ba91e58e33","fromSide":"bottom","toNode":"c03f3d27925d07dc","toSide":"top","color":"5"},
+		{"id":"3441bdd4f87f4c6b","fromNode":"978d33ba91e58e33","fromSide":"right","toNode":"88c37a5b6ca455af","toSide":"left"},
+		{"id":"a2e272be18e31592","fromNode":"88c37a5b6ca455af","fromSide":"right","toNode":"b4252d3a50695944","toSide":"left","color":"6","label":"bonne combinaison"}
+	]
+}

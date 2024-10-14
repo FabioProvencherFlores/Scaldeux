@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"80f3ec8b0edce51e","type":"text","text":"# Point de vue\nUne salle complètement sombre. (est-ce possible d'intéragir dans le noir? Maybe ça fait des sons qui forshadow ce qui va être utilisable)\n\nUn trous avec une \"lumière du jour\" jaunâtre","x":-131,"y":-35,"width":451,"height":175},
+		{"id":"08feef161bc2904f","type":"text","text":"# [[scale map shore rackage.canvas|Vers la lumière]]","x":888,"y":-98,"width":292,"height":63}
+	],
+	"edges":[
+		{"id":"efaeb28a152385ce","fromNode":"80f3ec8b0edce51e","fromSide":"right","toNode":"08feef161bc2904f","toSide":"left","label":"seule option"}
+	]
+}

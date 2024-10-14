@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"49e9bdb42ad9a469","type":"text","text":"# Point de vue\n\nUne chambre sombre avec 12 cryopods allumants d'un éclat turquoise. Des silhouettes sont présentes dans les pods.\n\n","x":-520,"y":-97,"width":380,"height":217},
+		{"id":"39edee88e84207f2","type":"text","text":"# Up\nUn \"hud\" qui montre l'énergie routé -> aide à remplir la porte.","x":-450,"y":271,"width":330,"height":149},
+		{"id":"954db981e70459ba","type":"text","text":"# Panneau de control\n\nDes cables relis les des **power outlets** avec des prises. \n\n> Interaction: c'est possible de *reroute* le power des cryopods vers la porte.","x":192,"y":-220,"width":488,"height":165},
+		{"id":"5cf612678faa24c9","type":"text","text":"# [[scale map ship bridge.canvas|Porte]]\n\n","x":880,"y":120,"width":200,"height":100}
+	],
+	"edges":[
+		{"id":"40e675e810b93c02","fromNode":"49e9bdb42ad9a469","fromSide":"right","toNode":"954db981e70459ba","toSide":"left"},
+		{"id":"fadfa3e4a7f8f5b7","fromNode":"49e9bdb42ad9a469","fromSide":"right","toNode":"5cf612678faa24c9","toSide":"left","color":"1"},
+		{"id":"a22cb4740329d854","fromNode":"954db981e70459ba","fromSide":"right","toNode":"5cf612678faa24c9","toSide":"top","color":"5"},
+		{"id":"25f38f5d7c97b7db","fromNode":"49e9bdb42ad9a469","fromSide":"bottom","toNode":"39edee88e84207f2","toSide":"top","color":"5"},
+		{"id":"9b2343650c90792a","fromNode":"954db981e70459ba","fromSide":"bottom","toNode":"5cf612678faa24c9","toSide":"top"},
+		{"id":"2670d4bfb2820ffe","fromNode":"49e9bdb42ad9a469","fromSide":"right","toNode":"5cf612678faa24c9","toSide":"left","label":"**IF enough power**"},
+		{"id":"9ea963eac8eacdba","fromNode":"49e9bdb42ad9a469","fromSide":"bottom","toNode":"39edee88e84207f2","toSide":"top"}
+	]
+}
