@@ -20,7 +20,6 @@
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /Scaldeux/[Mm]emoryCaptures/
-/[Mm]emoryCaptures/
 
 # Recordings can get excessive in size
 /Scaldeux/[Rr]ecordings/
