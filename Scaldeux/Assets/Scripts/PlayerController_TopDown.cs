@@ -5,14 +5,14 @@ using UnityEngine;
 public class PlayerController_TopDown : MonoBehaviour
 {
     [SerializeField]
-    new Rigidbody2D rigidbody2D;
+    new Rigidbody rigidbody;
 
     [Header("Movement")]
     [SerializeField]
     [Min(0.1f)]
     float movementSpeed = 100f;
 
-    Vector2 _movementDirection;
+    Vector3 _movementDirection;
 
     void Start()
     {
@@ -22,8 +22,8 @@ public class PlayerController_TopDown : MonoBehaviour
 
     void Update()
     {
-        _movementDirection.x = -Input.GetAxisRaw("Horizontal");
-        _movementDirection.y = Input.GetAxisRaw("Vertical");
+        _movementDirection.x = Input.GetAxisRaw("Horizontal");
+        _movementDirection.z = Input.GetAxisRaw("Vertical");
         if(_movementDirection.sqrMagnitude > 1f) 
         {
             _movementDirection.Normalize();
@@ -32,6 +32,6 @@ public class PlayerController_TopDown : MonoBehaviour
 
     void FixedUpdate()
     {
-        rigidbody2D.linearVelocity = _movementDirection * movementSpeed * Time.fixedDeltaTime;    
+        rigidbody.linearVelocity = _movementDirection * movementSpeed * Time.fixedDeltaTime;    
     }
 }
