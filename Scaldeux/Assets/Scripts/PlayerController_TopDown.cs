@@ -32,6 +32,6 @@ public class PlayerController_TopDown : MonoBehaviour
 
     void FixedUpdate()
     {
-        rigidbody2D.velocity = _movementDirection * movementSpeed * Time.fixedDeltaTime;    
+        rigidbody2D.linearVelocity = _movementDirection * movementSpeed * Time.fixedDeltaTime;    
     }
 }
