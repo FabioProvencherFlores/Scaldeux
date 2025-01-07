@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MultiplayerTest.unity
     guid: e80550dc661783a4990af6bd506b8492
+  - enabled: 1
+    path: Assets/Networking Test scenes/DA_Minimal_Setup/DA_Setup.unity
+    guid: fcc543048a1019149a1329b22590bf63
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
