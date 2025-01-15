@@ -1,5 +1,6 @@
 using Unity.Netcode.Components;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 #if UNITY_EDITOR
 using Unity.Netcode.Editor;
 using UnityEditor;
@@ -11,11 +12,15 @@ public class PlayerControllerNetworkedEditor : NetworkTransformEditor
 {
     private SerializedProperty m_Speed;
     private SerializedProperty m_Camera;
+    private SerializedProperty mouseSenX;
+    private SerializedProperty mouseSenY;
 
     public override void OnEnable()
     {
         m_Speed = serializedObject.FindProperty(nameof(PlayerControllerNetworked.Speed));
         m_Camera = serializedObject.FindProperty(nameof(PlayerControllerNetworked.FPSCamera));
+        mouseSenX = serializedObject.FindProperty(nameof(PlayerControllerNetworked.mouseSensitivityX));
+        mouseSenY = serializedObject.FindProperty(nameof(PlayerControllerNetworked.mouseSensitivityY));
         base.OnEnable();
     }
 
@@ -23,6 +28,8 @@ public class PlayerControllerNetworkedEditor : NetworkTransformEditor
     {
         EditorGUILayout.PropertyField(m_Speed);
         EditorGUILayout.PropertyField(m_Camera);
+        EditorGUILayout.PropertyField(mouseSenX);
+        EditorGUILayout.PropertyField(mouseSenY);
     }
 
     public override void OnInspectorGUI()
@@ -47,10 +54,20 @@ public class PlayerControllerNetworked : NetworkTransform
     public float Speed = 10;
     private Vector3 m_Motion;
 
-    //[SerializeField]
+
     public GameObject FPSCamera;
 
+    private float xRotation;
+    private float yRotation;
+
+    public float mouseSensitivityX;
+    public float mouseSensitivityY;
     public GameObject GetFPSCamera() {  return FPSCamera; }
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     private void Update()
     {
@@ -72,5 +89,14 @@ public class PlayerControllerNetworked : NetworkTransform
         {
             transform.position += m_Motion * Speed * Time.deltaTime;
         }
+
+        Vector2 mouseMov = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
+        yRotation += mouseMov.x * Time.deltaTime * mouseSensitivityX;
+
+        xRotation += mouseMov.y * Time.deltaTime * mouseSensitivityY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+        FPSCamera.transform.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 }
