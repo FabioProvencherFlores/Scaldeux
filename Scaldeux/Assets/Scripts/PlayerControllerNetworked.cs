@@ -52,7 +52,8 @@ public class PlayerControllerNetworked : NetworkTransform
     public bool PlayerControllerNetworkedPropertiesVisible;
 #endif
     public float Speed = 10;
-    private Vector3 m_Motion;
+    private Vector3 _bodyMovement;
+    private Vector2 _mouseOnScreenMovement;
 
 
     public GameObject FPSCamera;
@@ -76,30 +77,37 @@ public class PlayerControllerNetworked : NetworkTransform
             return;
         }
 
-        // Handle acquiring and applying player input
-        m_Motion = Vector3.zero;
 
-        m_Motion += transform.forward * Input.GetAxis("Vertical");
-        m_Motion += transform.right * Input.GetAxis("Horizontal");
+        // =======================================================
+        //                          WASD
+        // =======================================================
+
+        // Get wasd input into real facing vector
+        _bodyMovement = transform.forward * Input.GetAxis("Vertical");
+        _bodyMovement += transform.right * Input.GetAxis("Horizontal");
 
 
         // If there is any player input magnitude, then apply that amount of
         // motion to the transform
-        if (m_Motion.magnitude > 0)
+        if (_bodyMovement.magnitude > 0)
         {
-            transform.position += m_Motion * Speed * Time.deltaTime;
+            // #todo should use velocity instead of position
+            transform.position += _bodyMovement * Speed * Time.deltaTime;
         }
 
-        Vector2 mouseMov = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-		yRotation += mouseMov.x * Time.deltaTime * mouseSensitivityX;
-		//Debug.Log(yRotation);
-		//Debug.Log(mouseSensitivityX);
-		//Debug.Log(mouseMov);
 
-        xRotation -= mouseMov.y * Time.deltaTime * mouseSensitivityY;
+		// =======================================================
+		//                          Mouse
+		// =======================================================
+
+		_mouseOnScreenMovement = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
+		yRotation += _mouseOnScreenMovement.x * Time.deltaTime * mouseSensitivityX;
+        xRotation -= _mouseOnScreenMovement.y * Time.deltaTime * mouseSensitivityY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
+        // rotation body
         transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        // tilt camera + rotation
         FPSCamera.transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);   
     }
 }
