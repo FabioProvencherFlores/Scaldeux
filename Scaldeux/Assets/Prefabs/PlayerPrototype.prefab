@@ -473,6 +473,8 @@ MonoBehaviour:
   PlayerControllerNetworkedPropertiesVisible: 1
   Speed: 10
   FPSCamera: {fileID: 1952374884934427331}
+  mouseSensitivityX: 50
+  mouseSensitivityY: 50
 --- !u!1 &8732718039428714663
 GameObject:
   m_ObjectHideFlags: 0

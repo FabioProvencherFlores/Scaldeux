@@ -57,11 +57,11 @@ public class PlayerControllerNetworked : NetworkTransform
 
     public GameObject FPSCamera;
 
-    private float xRotation;
-    private float yRotation;
+    private float xRotation = 0f;
+    private float yRotation = 0f;
 
-    public float mouseSensitivityX;
-    public float mouseSensitivityY;
+    public float mouseSensitivityX = 5f;
+    public float mouseSensitivityY = 5f;
     public GameObject GetFPSCamera() {  return FPSCamera; }
 
     private void Start()
@@ -79,8 +79,8 @@ public class PlayerControllerNetworked : NetworkTransform
         // Handle acquiring and applying player input
         m_Motion = Vector3.zero;
 
-        m_Motion += Vector3.forward * Input.GetAxis("Vertical");
-        m_Motion += Vector3.right * Input.GetAxis("Horizontal");
+        m_Motion += transform.forward * Input.GetAxis("Vertical");
+        m_Motion += transform.right * Input.GetAxis("Horizontal");
 
 
         // If there is any player input magnitude, then apply that amount of
@@ -91,12 +91,15 @@ public class PlayerControllerNetworked : NetworkTransform
         }
 
         Vector2 mouseMov = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-        yRotation += mouseMov.x * Time.deltaTime * mouseSensitivityX;
+		yRotation += mouseMov.x * Time.deltaTime * mouseSensitivityX;
+		//Debug.Log(yRotation);
+		//Debug.Log(mouseSensitivityX);
+		//Debug.Log(mouseMov);
 
-        xRotation += mouseMov.y * Time.deltaTime * mouseSensitivityY;
+        xRotation -= mouseMov.y * Time.deltaTime * mouseSensitivityY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        FPSCamera.transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        FPSCamera.transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);   
     }
 }
