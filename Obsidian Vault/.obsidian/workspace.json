@@ -4,58 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "64a529c2265f5966",
+        "id": "d94d6bae714cd5d4",
         "type": "tabs",
-        "dimension": 27.385159010600706,
         "children": [
           {
-            "id": "f30c877cbc7453a8",
+            "id": "a58edd77766668a6",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "scale map overall layout.canvas",
-                "viewState": {
-                  "x": 481.16926677492734,
-                  "y": -566.2919489262385,
-                  "zoom": -0.3333333333333332
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "scale map overall layout"
-            }
-          }
-        ]
-      },
-      {
-        "id": "897e7728f0ea0295",
-        "type": "tabs",
-        "dimension": 72.6148409893993,
-        "children": [
-          {
-            "id": "6c82f0e35bb56dbe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Restart.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Restart"
-            }
-          },
-          {
-            "id": "a8cb6d652b8f9346",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "idee quest structure.jpg"
-              },
-              "icon": "lucide-image",
-              "title": "idee quest structure"
+              "title": "New tab"
             }
           }
         ]
@@ -196,11 +155,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6c82f0e35bb56dbe",
+  "active": "a58edd77766668a6",
   "lastOpenFiles": [
-    "Point and click adventure pitch.md",
-    "idee quest structure.jpg",
+    "scale map overall layout.canvas",
     "Restart.md",
-    "scale map overall layout.canvas"
+    "idee quest structure.jpg",
+    "Point and click adventure pitch.md"
   ]
 }
