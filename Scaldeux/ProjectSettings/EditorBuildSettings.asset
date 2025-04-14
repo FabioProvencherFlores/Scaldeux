@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Networking Test scenes/DA_Minimal_Setup/DA_Setup.unity
     guid: fcc543048a1019149a1329b22590bf63
+  - enabled: 1
+    path: Assets/Scenes/Ship_Block_Temp.unity
+    guid: fbb5ffc23c36cf84d8534126e6353a9a
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
